@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "Kvi9UVpUznBAjHLdiF2Omsj8pLNvp4taqWmWay0+5kM=",
+  "Source": "VirtualWaiter.Service",
+  "BasePath": "_content/VirtualWaiter.Service",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
