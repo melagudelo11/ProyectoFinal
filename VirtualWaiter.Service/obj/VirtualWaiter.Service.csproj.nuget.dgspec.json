@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Melissa\\source\\repos\\VirtualWaiter.Service\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj": {}
+    "D:\\SENA\\Proyecto Final\\VirtualWaiter\\ProyectoFinal\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Melissa\\source\\repos\\VirtualWaiter.Service\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj": {
+    "D:\\SENA\\Proyecto Final\\VirtualWaiter\\ProyectoFinal\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Melissa\\source\\repos\\VirtualWaiter.Service\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj",
+        "projectUniqueName": "D:\\SENA\\Proyecto Final\\VirtualWaiter\\ProyectoFinal\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj",
         "projectName": "VirtualWaiter.Service",
-        "projectPath": "C:\\Users\\Melissa\\source\\repos\\VirtualWaiter.Service\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj",
+        "projectPath": "D:\\SENA\\Proyecto Final\\VirtualWaiter\\ProyectoFinal\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj",
         "packagesPath": "C:\\Users\\Melissa\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Melissa\\source\\repos\\VirtualWaiter.Service\\VirtualWaiter.Service\\obj\\",
+        "outputPath": "D:\\SENA\\Proyecto Final\\VirtualWaiter\\ProyectoFinal\\VirtualWaiter.Service\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
