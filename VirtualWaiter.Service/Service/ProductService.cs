@@ -1,4 +1,5 @@
-﻿using VirtualWaiter.Service.Data.Models;
+﻿using Microsoft.EntityFrameworkCore;
+using VirtualWaiter.Service.Data.Models;
 using VirtualWaiter.Service.Interface;
 
 namespace VirtualWaiter.Service.Service
@@ -16,6 +17,11 @@ namespace VirtualWaiter.Service.Service
         public async Task<IEnumerable<Product>> GetActive()
         {
             return _virtualWaiterContext.Product;
+        }
+
+        public async Task<Product> GetById(int id)
+        {
+            return await _virtualWaiterContext.Product.FirstOrDefaultAsync(x => x.Id == id);
         }
 
         public async Task<bool> Save(Product product)

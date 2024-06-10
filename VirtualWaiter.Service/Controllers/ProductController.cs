@@ -30,5 +30,13 @@ namespace VirtualWaiter.Service.Controllers
             var result = await _product.Save(product);
             return result;
         }
+
+        [HttpGet]
+        [Route(nameof(ProductController.GetById))]
+        public async Task<Product> GetById(int id)
+        {
+            var result = await _product.GetById(id);
+            return result;
+        }
     }
 }
