@@ -16,12 +16,13 @@ namespace VirtualWaiter.Service.Service
 
         public async Task<IEnumerable<Product>> GetActive()
         {
-            return _virtualWaiterContext.Product;
+            return await _virtualWaiterContext.Product.ToListAsync();
         }
 
         public async Task<Product> GetById(int id)
         {
             return await _virtualWaiterContext.Product.FirstOrDefaultAsync(x => x.Id == id);
+            
         }
 
         public async Task<bool> Save(Product product)
@@ -31,6 +32,36 @@ namespace VirtualWaiter.Service.Service
 
             return true;
 
+        }
+
+        public async Task<bool> Update(Product product)
+        {
+            var existingProduct = await _virtualWaiterContext.Product.FirstOrDefaultAsync(x => x.Id == product.Id);
+            if (existingProduct != null)
+            {
+                existingProduct.Name = product.Name;
+                existingProduct.Description = product.Description;
+                existingProduct.Price = product.Price;
+                existingProduct.Active = product.Active;
+
+                _virtualWaiterContext.Product.Update(existingProduct);
+                await _virtualWaiterContext.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
+
+        public async Task<bool> Delete(int id)
+        {
+            var existingProduct = await _virtualWaiterContext.Product.FirstOrDefaultAsync(x => x.Id == id);
+            if (existingProduct != null)
+            {
+                existingProduct.Active = (sbyte?)(existingProduct.Active == 1 ? 0 : 1);
+                _virtualWaiterContext.Product.Update(existingProduct);
+                await _virtualWaiterContext.SaveChangesAsync();
+                return true;
+            }
+            return false;
         }
     }
 }

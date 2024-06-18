@@ -21,6 +21,9 @@ builder.Services.AddDbContextPool<VirtualWaiterContext>
     (options => options.UseMySql(connectionString.ConnectionString, ServerVersion.AutoDetect(connectionString.ConnectionString)));
 
 builder.Services.AddScoped<IProduct, ProductService >();
+builder.Services.AddScoped<IUser, UserService>();
+builder.Services.AddScoped<IEaterytable, EaterytableService>();
+builder.Services.AddScoped<IOrder, OrderService>();
 
 var app = builder.Build();
 

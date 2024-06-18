@@ -45,13 +45,13 @@ public partial class VirtualWaiterContext : DbContext
             entity.Property(e => e.CreationDate).HasColumnType("datetime");
             entity.Property(e => e.Observation).HasMaxLength(255);
 
-            entity.HasOne(d => d.IdEaterytableNavigation).WithMany(p => p.Order)
-                .HasForeignKey(d => d.IdEaterytable)
-                .HasConstraintName("Order_ibfk_2");
+            //entity.HasOne(d => d.IdEaterytableNavigation).WithMany(p => p.Order)
+            //    .HasForeignKey(d => d.IdEaterytable)
+            //    .HasConstraintName("Order_ibfk_2");
 
-            entity.HasOne(d => d.IdUserNavigation).WithMany(p => p.Order)
-                .HasForeignKey(d => d.IdUser)
-                .HasConstraintName("Order_ibfk_1");
+            //entity.HasOne(d => d.IdUserNavigation).WithMany(p => p.Order)
+            //    .HasForeignKey(d => d.IdUser)
+            //    .HasConstraintName("Order_ibfk_1");
         });
 
         modelBuilder.Entity<OrderDetail>(entity =>

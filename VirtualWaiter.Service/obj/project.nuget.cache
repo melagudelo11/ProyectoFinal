@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "bIhDFmasCBHSL2qmXZgiCGYqDCvdtO9SX3GKxTHpa8sOHD7opLUaqfCDGJaNdV15CtyPKnbnEcvB9WqIi4l83A==",
+  "dgSpecHash": "ny62hAglRJbPm4feL2+hVJlKvYb6QHhwrXGhhT8Ot3ySb5/NgPyO4OjXE06QU+mKM3ib9LNmlZm/oKYcmzg2Kg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Melissa\\source\\repos\\VirtualWaiter.Service\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj",
+  "projectFilePath": "D:\\SENA\\Proyecto Final\\VirtualWaiter\\ProyectoFinal\\VirtualWaiter.Service\\VirtualWaiter.Service.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Melissa\\.nuget\\packages\\google.protobuf\\3.21.9\\google.protobuf.3.21.9.nupkg.sha512",
     "C:\\Users\\Melissa\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",

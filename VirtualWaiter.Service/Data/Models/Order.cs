@@ -7,9 +7,9 @@ public partial class Order
 {
     public int Id { get; set; }
 
-    public int? IdUser { get; set; }
+    public int IdUser { get; set; }
 
-    public int? IdEaterytable { get; set; }
+    public int IdEaterytable { get; set; }
 
     public DateTime? CreationDate { get; set; }
 
@@ -18,10 +18,6 @@ public partial class Order
     public float? Price { get; set; }
 
     public sbyte? Active { get; set; }
-
-    public virtual Eaterytable? IdEaterytableNavigation { get; set; }
-
-    public virtual User? IdUserNavigation { get; set; }
 
     public virtual ICollection<OrderDetail> OrderDetail { get; } = new List<OrderDetail>();
 }
